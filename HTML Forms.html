@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+    <style>
+        h1{
+            color: plum;
+        }
+        body{
+            background: url(https://image.freepik.com/free-vector/geometric-gradient-soft-color-white-line-background_105555-354.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .purple{
+            background-color: purple;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .other{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    
+    <form>
+        <label for="first name">First name:</label>
+        <input type="text" id="first name"placeholder="your first name" required>
+        <br><br>
+        <label for="middle name">Middle name:</label>
+        <input type="text" id="middle name"placeholder="your middle name" required>
+        <br><br>
+        <label for="family name">Family name:</label>
+        <input type="text" id="family name"placeholder="your family name" required>
+        <br>
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email"placeholder="your email" required>
+        <br><br>
+        <label for="home address">Home Adress:</label><br>
+        <textarea rows="5" cols="50" placeholder="Enter your home address..." required></textarea><br>
+        <p>Hobbies:</p>
+        <input type="checkbox" id="games" name="games" value="Games">
+        <label for="games">Computer games</label><br>
+        <input type="checkbox" id="music" name="music" value="Music">
+        <label for="music">Playing music instruments</label><br>
+        <input type="checkbox" id="cook" name="cook" value="Cook">
+        <label for="cook">Cooking</label><br>
+        <input type="checkbox" id="draw" name="draw" value="Draw">
+        <label for="draw">Drawing</label>
+        <br><br>
+        <label for="fav color">Favorite Color:</label><br>
+        <select name="color" id="color">
+            <option value="" selected disabled hidden> -- Select Color -- </option>
+            <option class="red">Red</option>
+            <option class="blue">Blue</option>
+            <option class="yellow">Yellow</option>
+            <option class="green">Green</option>
+            <option class="purple">Purple</option>
+            <option class="orange">Orange</option>
+            <option class="pink">Pink</option>
+            <option class="other">Other's</option>
+        </select>
+        <br><br>
+        <label for="bio">Your bio:</label><br>
+        <textarea rows="10" cols="50" placeholder="Say something about yourself..." name="comment"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+
+</body>
+</html>
